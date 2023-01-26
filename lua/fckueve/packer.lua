@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
 			vim.cmd('colorscheme rose-pine')
 		end
 	})
+    use { "catppuccin/nvim", as = "catppuccin" }
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
