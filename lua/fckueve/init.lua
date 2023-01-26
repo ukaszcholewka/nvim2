@@ -1,2 +1,2 @@
+require("fckueve.set")
 require("fckueve.remap")
-print("hello from fckueve")

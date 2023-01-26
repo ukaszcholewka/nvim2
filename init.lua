@@ -1,3 +1,2 @@
 require("fckueve")
-print("hello")
 
