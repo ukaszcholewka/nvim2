@@ -6,18 +6,8 @@ lsp.nvim_workspace()
 
 lsp.ensure_installed({
 	'tsserver',
-	'sumneko_lua',
+	'lua_ls',
 	'rust_analyzer',
-})
-
-lsp.configure('sumneko_lua', {
-	settings = {
-		Lua = {
-			diagnostics = {
-				globals = { 'vim' }
-			}
-		}
-	}
 })
 
 local cmp = require('cmp')
@@ -61,6 +51,7 @@ lsp.on_attach(function(_, bufnr)
 	vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end, opts)
 	vim.keymap.set("n", "rn", function() vim.lsp.buf.rename() end, opts)
 	vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+	vim.keymap.set("n", "ef", function() vim.lsp.buf.format() end, opts)
 end)
 
 lsp.setup()
