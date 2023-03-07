@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -178,10 +183,20 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["wrapping.nvim"] = {
+    config = { "\27LJ\2\nn\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0 auto_set_filetype_allowlist\1\0\0\1\2\0\0\rmarkdown\nsetup\rwrapping\frequire\0" },
+    loaded = true,
+    path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/wrapping.nvim",
+    url = "https://github.com/andrewferrier/wrapping.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: wrapping.nvim
+time([[Config for wrapping.nvim]], true)
+try_loadstring("\27LJ\2\nn\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0 auto_set_filetype_allowlist\1\0\0\1\2\0\0\rmarkdown\nsetup\rwrapping\frequire\0", "config", "wrapping.nvim")
+time([[Config for wrapping.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
