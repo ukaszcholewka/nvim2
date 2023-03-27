@@ -47,4 +47,10 @@ return require('packer').startup(function(use)
     })
     use('https://github.com/github/copilot.vim')
     use('NvChad/nvim-colorizer.lua')
+    use {
+        'samodostal/image.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        },
+    }
 end)
