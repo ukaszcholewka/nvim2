@@ -45,4 +45,6 @@ return require('packer').startup(function(use)
             })
         end,
     })
+    use('https://github.com/github/copilot.vim')
+    use('NvChad/nvim-colorizer.lua')
 end)
