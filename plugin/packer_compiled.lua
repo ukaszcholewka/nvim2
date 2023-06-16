@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["image.nvim"] = {
+    loaded = true,
+    path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/image.nvim",
+    url = "https://github.com/samodostal/image.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -138,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/fckueve/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/NvChad/nvim-colorizer.lua"
   },
   ["nvim-comment"] = {
     loaded = true,
