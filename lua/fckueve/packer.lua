@@ -37,14 +37,7 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' }, -- Optional
         }
     }
-    use({
-        "andrewferrier/wrapping.nvim",
-        config = function()
-            require("wrapping").setup({
-                auto_set_filetype_allowlist = { 'markdown' }
-            })
-        end,
-    })
+    use({ "andrewferrier/wrapping.nvim" })
     use('https://github.com/github/copilot.vim')
     use('NvChad/nvim-colorizer.lua')
     use {
