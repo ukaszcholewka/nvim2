@@ -66,9 +66,16 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
     use {
-    'gi4c0/lint-node.nvim',
-    requires = {
-        {'nvim-telescope/telescope.nvim'}
+        'gi4c0/lint-node.nvim',
+        requires = {
+            { 'nvim-telescope/telescope.nvim' }
+        }
     }
-}
+
+    use({
+        "epwalsh/obsidian.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+        }
+    })
 end)
