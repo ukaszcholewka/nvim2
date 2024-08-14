@@ -55,6 +55,11 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("n", "rn", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
     vim.keymap.set("n", "ef", function() vim.lsp.buf.format() end, opts)
+
+    vim.keymap.set("n", "fr", "<cmd>:Telescope lsp_references<CR>", opts)
+    vim.keymap.set("n", "ft", "<cmd>:Telescope lsp_type_definitions<CR>", opts)
+    vim.keymap.set("n", "fy", "<cmd>:Telescope registers<CR>", opts)
+    vim.keymap.set("n", "fj", "<cmd>:Telescope jumplist<CR>", opts)
 end)
 
 lsp.setup()
