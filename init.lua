@@ -1,2 +1,1 @@
-require("fckueve")
-
+require("config.lazy")
