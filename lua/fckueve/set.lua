@@ -26,9 +26,25 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+vim.opt.updatetime = 10
 
 vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
+
+
+
+function SaveMacro(macro_name, reg)
+  local file_path = vim.fn.stdpath("config") .. "/nvim/macros/" .. macro_name .. ".lua"
+  local file = io.open(file_path, "w")
+  local keys = vim.fn.getreg(reg)
+
+  if file ~= nil then
+    file:write("vim.api.nvim_feedkeys('", keys, "', 'n', false)")
+    file:close()
+  end
+end
+
+vim.api.nvim_create_user_command('SaveMacro', SaveMacro, {})
+
 

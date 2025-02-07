@@ -39,4 +39,4 @@ vim.keymap.set("n", "<leader>wv", "<C-w><C-v><C-w>l")
 vim.keymap.set("n", "<leader>ws", "<C-w><C-s><C-w>j")
 vim.keymap.set("n", "<leader>qq", "<cmd>:q<CR>")
 
-
+vim.keymap.set("n", "<leader>ms", "_f i\n<Esc>")

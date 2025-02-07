@@ -1,6 +1,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    -- use('nvim-tree/nvim-web-devicons')
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     use {
@@ -12,7 +13,7 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/nvim-treesitter-context')
     use('theprimeagen/harpoon')
-    use('mbbill/undotree')
+    -- use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use("terrortylor/nvim-comment")
     use {
@@ -71,4 +72,18 @@ return require('packer').startup(function(use)
     --         "nvim-lua/plenary.nvim",
     --     }
     -- })
+
+    use('nvim-lua/plenary.nvim')
+    use {
+      'pwntester/octo.nvim',
+      requires = {
+        'nvim-lua/plenary.nvim',
+        'nvim-telescope/telescope.nvim',
+        -- OR 'ibhagwan/fzf-lua',
+        'nvim-tree/nvim-web-devicons',
+      },
+      config = function ()
+        require"octo".setup()
+      end
+    }
 end)
