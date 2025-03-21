@@ -23,6 +23,11 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
+    {
+      "scottmckendry/cyberdream.nvim",
+      lazy = false,
+      priority = 1000,
+    },
     { "catppuccin/nvim",                        name = "catppuccin", priority = 1000, config = function() require "custom.colors" end },
     { 'nvim-treesitter/nvim-treesitter-context' },
     {
@@ -38,7 +43,7 @@ require("lazy").setup({
         'nvim-lua/plenary.nvim'
       },
     },
-    { import = "config.plugins" }
+    { import = "config.plugins" },
   },
 })
 
@@ -75,6 +80,7 @@ vim.opt.updatetime = 10
 vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 
 

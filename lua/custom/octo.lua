@@ -16,12 +16,12 @@ require"octo".setup({
     },
   },
   comment_icon = "▎",                      -- comment marker
-  outdated_icon = "󰅒 ",                    -- outdated indicator
-  resolved_icon = " ",                    -- resolved indicator
+  outdated_icon = "Ø",                    -- outdated indicator
+  resolved_icon = "Æ",                    -- resolved indicator
   reaction_viewer_hint_icon = " ",        -- marker for user reactions
   commands = {},                           -- additional subcommands made available to `Octo` command
   users = "search",                        -- Users for assignees or reviewers. Values: "search" | "mentionable" | "assignable"
-  user_icon = " ",                        -- user icon
+  user_icon = "©",                        -- user icon
   ghost_icon = "󰊠 ",                       -- ghost icon
   timeline_marker = " ",                  -- timeline marker
   timeline_indent = "2",                   -- timeline indentation
