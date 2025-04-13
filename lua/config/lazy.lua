@@ -126,3 +126,5 @@ vim.keymap.set("n", "<leader>ws", "<C-w><C-s><C-w>j")
 vim.keymap.set("n", "<leader>qq", "<cmd>:q<CR>")
 
 vim.keymap.set("n", "<leader>ms", "_f i\n<Esc>")
+vim.keymap.set("v", "<leader>cl", "y$%oconsole.log()<Esc>ha''<Esc>hpli: <Esc>la, <Esc>p")
+
