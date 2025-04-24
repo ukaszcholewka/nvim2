@@ -27,7 +27,18 @@ require("lazy").setup({
       "scottmckendry/cyberdream.nvim",
       lazy = false,
       priority = 1000,
+      options = {
+        theme = "dark"
+      },
     },
+    -- {
+    --   "ukaszcholewka/psychodelic.nvim",
+    --   lazy = false,
+    --   priority = 1000,
+    --   options = {
+    --     theme = "light"
+    --   },
+    -- },
     { "catppuccin/nvim",                        name = "catppuccin", priority = 1000, config = function() require "custom.colors" end },
     { 'nvim-treesitter/nvim-treesitter-context' },
     {
@@ -118,8 +129,6 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
-
 vim.keymap.set("n", "<leader>w", "<C-w>")
 vim.keymap.set("n", "<leader>wv", "<C-w><C-v><C-w>l")
 vim.keymap.set("n", "<leader>ws", "<C-w><C-s><C-w>j")
@@ -127,4 +136,3 @@ vim.keymap.set("n", "<leader>qq", "<cmd>:q<CR>")
 
 vim.keymap.set("n", "<leader>ms", "_f i\n<Esc>")
 vim.keymap.set("v", "<leader>cl", "y$%oconsole.log()<Esc>ha''<Esc>hpli: <Esc>la, <Esc>p")
-
