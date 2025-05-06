@@ -40,7 +40,6 @@ require("lazy").setup({
     --   },
     -- },
     { "catppuccin/nvim",                        name = "catppuccin", priority = 1000, config = function() require "custom.colors" end },
-    { 'nvim-treesitter/nvim-treesitter-context' },
     {
       'lewis6991/gitsigns.nvim',
       config = function()
