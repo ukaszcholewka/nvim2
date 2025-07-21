@@ -1,0 +1,2 @@
+custom-shader = shaders/cursor_smear.glsl
+custom-shader = shaders/bloom025.glsl
