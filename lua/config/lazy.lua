@@ -47,6 +47,8 @@ require("lazy").setup({
   },
 })
 
+-- vim.treesitter.language.register('typescript', 'ripple')
+
 vim.opt.guicursor = ""
 
 vim.opt.nu = true

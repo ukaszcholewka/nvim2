@@ -1,0 +1,29 @@
+-- require("codecompanion").setup({
+--   adapters = {
+--     ollama = function()
+--       return require("codecompanion.adapters").extend("ollama", {
+--         env = {
+--           url = "http://192.168.0.10:11434"
+--         },
+--         schema = {
+--           model = {
+--             default = "qwen2.5-coder:0.5b"
+--           }
+--         }
+--       })
+--     end,
+--   },
+--   strategies = {
+--     chat = { adapter = "ollama" },
+--     inline = { adapter = "ollama" },
+--   },
+--   interactions = {
+--     chat = {
+--       adapter = "ollama",
+--       model = "qwen2.5-coder:0.5b"
+--     },
+--   },
+--   opts = {
+--     log_level = "DEBUG",
+--   },
+-- })
