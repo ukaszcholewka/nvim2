@@ -23,10 +23,10 @@ return {
     auto_suggestions_provider = nil, -- Optional: use it for copilot-like suggestions
     providers = {
       ollama = {
-        endpoint = "http://192.168.0.10:11434", -- Base URL only
+        endpoint = "http://192.168.0.185:11434", -- Base URL only
         -- model = "deepcoder:1.5b",            -- Your choice from your list
         -- model = "qwen2.5-coder:1.5b",            -- Your choice from your list
-        model = "qwen3.5:2b",            -- Your choice from your list
+        model = "deepcoder:14b",            -- Your choice from your list
         -- model = "qwen2.5-coder:0.5b",            -- Your choice from your list
         -- model = "qwen2.5-coder:3b",            -- Your choice from your list
         timeout = 60000,                        -- 30 seconds
